@@ -28,10 +28,6 @@ export default function Home() {
         </Head>
         <main>
           <Header />
-          <Hero />
-          <Lead />
-          <Contact />
-        </main>
           <section id="about">
             <Menu2 />
           </section>
