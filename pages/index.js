@@ -9,8 +9,10 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Lead from '../components/Lead'
+import Contact from '../components/Contact'
 import Menu from '../components/Menu'
 import Menu2 from '../components/Menu2'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,13 +29,14 @@ export default function Home() {
         <main>
           <Header />
           <Hero />
-          {/* <Lead /> */}
-          {/* <Menu /> */}
+          <Lead />
+          <Contact />
+        </main>
           <section id="about">
             <Menu2 />
           </section>
           <section id="contact">
-            コンタクト
+            <Contact />
           </section>
         <Footer />
         </main>
