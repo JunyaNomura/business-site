@@ -5,7 +5,10 @@ import {
   Text,
   VStack,
   useBreakpointValue,
+  Link
 } from '@chakra-ui/react';
+
+import NextLink from 'next/link'
 
 export default function Hero() {
   return (
@@ -13,7 +16,7 @@ export default function Hero() {
       w={'full'}
       h={'80vh'}
       backgroundImage={
-        'url(https://images.unsplash.com/photo-1600267175161-cfaa711b4a81?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)'
+        'url(http://unsplash.it/500/300/?random)'
       }
       backgroundSize={'cover'}
       backgroundPosition={'center center'}>
@@ -27,30 +30,26 @@ export default function Hero() {
             color={'white'}
             fontWeight={800}
             lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}>
-            Cheat Days!!!
+            fontSize={useBreakpointValue({ base: '4xl', md: '5xl' })}>
+            Cheat Days
           </Text>
           <Text
             color={'white'}
             fontWeight={500}
             lineHeight={1.5}
-            fontSize={useBreakpointValue({ base: 'md', md: 'lg' })}>
-            Webを中心に、写真・動画・3DCG・SNS、一貫したユーザー体験を設計するチームです。
+            fontSize={useBreakpointValue({ base: 'xl', md: '2xl' })}>
+            Webを中心に、写真・動画・3DCG・SNS、一貫したユーザー体験をプロデュース
           </Text>
           <Stack direction={'row'}>
             <Button
-              bg={'blue.400'}
+              bg={'blue.300'}
               rounded={'full'}
               color={'white'}
-              _hover={{ bg: 'blue.500' }}>
-              事例を見る
-            </Button>
-            <Button
-              bg={'whiteAlpha.300'}
-              rounded={'full'}
-              color={'white'}
-              _hover={{ bg: 'whiteAlpha.500' }}>
-              お問い合わせ
+              _hover={{ bg: 'blue.500' }}
+            >
+              <Link as={NextLink} href='#contact'>
+                Home
+              </Link>
             </Button>
           </Stack>
         </Stack>
