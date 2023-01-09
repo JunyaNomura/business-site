@@ -52,8 +52,9 @@ export default function Contact() {
                     <InputGroup borderColor="#E0E1E7">
                       <InputLeftElement
                         pointerEvents="none"
-                        children={<BsPerson color="gray.800" />}
-                      />
+                      >
+                       {<BsPerson color="gray.800" />}
+                      </InputLeftElement>
                       <Input type="text" size="md" />
                     </InputGroup>
                   </FormControl>
@@ -62,8 +63,9 @@ export default function Contact() {
                     <InputGroup borderColor="#E0E1E7">
                       <InputLeftElement
                         pointerEvents="none"
-                        children={<BsTelephone color="gray.800" />}
-                      />
+                      >
+                        {<BsTelephone color="gray.800" />}
+                      </InputLeftElement>
                       <Input type="number" size="md" />
                     </InputGroup>
                   </FormControl>
@@ -72,8 +74,9 @@ export default function Contact() {
                     <InputGroup borderColor="#E0E1E7">
                       <InputLeftElement
                         pointerEvents="none"
-                        children={<MdOutlineEmail color="gray.800" />}
-                      />
+                      >
+                        {<MdOutlineEmail color="gray.800" />}
+                      </InputLeftElement>
                       <Input type="text" size="md" />
                     </InputGroup>
                   </FormControl>
