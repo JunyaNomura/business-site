@@ -28,6 +28,7 @@ export default function Home() {
         </Head>
         <main>
           <Header />
+          <Hero />
           <section id="about">
             <Menu2 />
           </section>
