@@ -23,6 +23,6 @@
     "react-icons": "^4.7.1"
   },
   "engines": {
-    "node": "1.6x"
+    "node": "16.x"
   }
 }
