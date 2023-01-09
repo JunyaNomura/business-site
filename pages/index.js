@@ -9,6 +9,8 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Lead from '../components/Lead'
+ //Asuka added the Contact component
+ import Contact from '../components/Contact'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,6 +28,7 @@ export default function Home() {
         <main>
           <Hero />
           <Lead />
+          <Contact />
         </main>
         <Footer />
       {/* </Container> */}
