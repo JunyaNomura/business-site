@@ -40,7 +40,7 @@ const SocialButton = ({
 export default function Footer() {
   return (
     <Box
-      bg={useColorModeValue('gray.50', 'gray.900')}
+      bg={useColorModeValue('gray.800', 'gray.900')}
       color={useColorModeValue('gray.700', 'gray.200')}>
       <Container
         as={Stack}
@@ -50,8 +50,8 @@ export default function Footer() {
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
-        <Text>© 2022 Chakra Templates. All rights reserved</Text>
-        <Stack direction={'row'} spacing={6}>
+        <Text>© 2023 Cheat days</Text>
+        {/* <Stack direction={'row'} spacing={6}>
           <SocialButton label={'Twitter'} href={'#'}>
             <FaTwitter />
           </SocialButton>
@@ -61,7 +61,7 @@ export default function Footer() {
           <SocialButton label={'Instagram'} href={'#'}>
             <FaInstagram />
           </SocialButton>
-        </Stack>
+        </Stack> */}
       </Container>
     </Box>
   );
